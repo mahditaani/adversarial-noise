@@ -11,6 +11,8 @@ labels = load_labels()
 
 # App title
 st.title("Adversarial Image Attack Tool")
+st.write("This page allows you to perform adversarial attacks on images using pre-trained models using a range of epsilon and iterations.")
+st.write("Upload an image and then carry out the attack which will generate adversarial noise with various different parameters. You can see how well the attack worked and how much the image was changed.")
 
 # Sidebar for parameters
 st.sidebar.header("Parameters")

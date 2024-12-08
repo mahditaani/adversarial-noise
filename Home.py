@@ -10,6 +10,12 @@ st.markdown(
 
     Welcome to the **Adversarial Image Attack Tool**! This tool demonstrates how adversarial attacks can subtly modify an image to deceive deep learning models. It's both an educational resource and a way to visualize the vulnerabilities of machine learning models like neural networks.
 
+    ## Using this tool
+    There 3 pages in this tool:
+    - **ImageNet Labels**: This page displays the labels used in the ImageNet dataset.
+    - **Adversarial Attack**: This page performs adversarial attacks on images using pre-trained models.
+    - **Optimise Noise**: This page allows you to perform adversarial attacks on images using pre-trained models using a range of epsilon and iterations.
+
     ## What are Adversarial Attacks?
 
     Adversarial attacks are intentional manipulations of input data designed to fool machine learning models. In the context of image classification, adversarial attacks make small, often imperceptible changes to an image that cause a model to misclassify it. These attacks highlight the challenges in deploying robust and secure AI systems.

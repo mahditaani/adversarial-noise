@@ -17,6 +17,7 @@ font_size = st.sidebar.slider("Font Size", 1.0, 2.0, 1.5, step=0.1)
 # Display the labels
 st.header("ImageNet Labels")
 st.write("The ImageNet dataset consists of 1000 classes.")
+st.write("This page allows you to search for a label or view all labels.")
 
 # let's allow a search for the labels
 search = st.text_input("Search for a label")

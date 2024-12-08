@@ -13,6 +13,8 @@ labels = load_labels()
 
 # App title
 st.title("Adversarial Image Attack Tool")
+st.write("This page allows you to perform adversarial attacks on images using pre-trained models.")
+st.write("Upload an image and then adjust the parameters to generate an adversarial image.")
 
 # Sidebar for parameters
 st.sidebar.header("Parameters")
