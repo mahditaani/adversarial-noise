@@ -37,8 +37,16 @@ uploaded_file = st.file_uploader(
     "Upload an Image (JPEG/PNG)", type=["jpeg", "jpg", "png"]
 )
 
-epsilon_list = [0., 0.001, 0.005, 0.01]
-iterations_list = [10, 20, 30]
+epsilons_string = st.sidebar.text_input("Epsilons", "0., 0.001, 0.005, 0.01", help="Enter a comma-separated list of epsilons to sweep over.")
+iterations_string = st.sidebar.text_input("Iterations", "10, 20, 30", help="Enter a comma-separated list of iterations to sweep over.")
+
+# Convert the string to a sorted list of floats
+epsilon_list = sorted([float(epsilon) for epsilon in epsilons_string.split(",")])
+iterations_list = sorted([int(iterations) for iterations in iterations_string.split(",")])
+
+# if zero not in epsilon_list then add it
+if 0. not in epsilon_list:
+    epsilon_list = [0.] + epsilon_list
 
 if uploaded_file:
     # Display the uploaded image
@@ -59,7 +67,7 @@ if uploaded_file:
             st.subheader(f"Target class: {target_class}")
             for epsilon in epsilon_list:
                 for iterations in iterations_list:
-                    if epsilon == 0. and iterations > 10:
+                    if epsilon == 0. and iterations > iterations_list[0]:
                         continue
                     st.subheader(f"Epsilon: {epsilon}, Iterations: {iterations}")
                     # Initialize the attack pipeline
