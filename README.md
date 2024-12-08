@@ -49,6 +49,7 @@ python -m pytest tests
 Don't know yet 😭
 
 ## TODO
+- [ ] Add Makefile
 - [ ] Add CI/CD
 - [ ] Generate documentation (Sphinx)
 - [ ] Fix line length issues in code
