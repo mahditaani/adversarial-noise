@@ -15,6 +15,7 @@ labels = load_labels()
 st.title("Adversarial Image Attack Tool")
 st.write("This page allows you to perform adversarial attacks on images using pre-trained models.")
 st.write("Upload an image and then adjust the parameters to generate an adversarial image.")
+st.info("The default paramters chosen here worked well to convince the model (AlexNet) that a panda is a gibbon without changing the image too much. If they do not work well for your image go to the `Optimise Noise` tab to see which parameters might.")
 
 # Sidebar for parameters
 st.sidebar.header("Parameters")
