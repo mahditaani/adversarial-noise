@@ -37,7 +37,7 @@ uploaded_file = st.file_uploader(
     "Upload an Image (JPEG/PNG)", type=["jpeg", "jpg", "png"]
 )
 
-epsilon_list = [0.001, 0.005, 0.01]
+epsilon_list = [0., 0.001, 0.005, 0.01]
 iterations_list = [10, 20, 30]
 
 if uploaded_file:
@@ -60,6 +60,8 @@ if uploaded_file:
             st.subheader(f"Target class: {target_class}")
             for epsilon in epsilon_list:
                 for iterations in iterations_list:
+                    if epsilon == 0. and iterations > 10:
+                        continue
                     st.subheader(f"Epsilon: {epsilon}, Iterations: {iterations}")
                     # Initialize the attack pipeline
                     pipeline = AdversarialAttackPipeline(
