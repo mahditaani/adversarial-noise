@@ -56,6 +56,8 @@ python -m pytest tests
 Don't know yet 😭
 
 ## TODO
+- [ ] More thorough testing (ensuring data types are correct etc) 
+- [ ] Make Attack class more generic to allow for different types of attacks (single pixel etc)
 - [ ] Add Makefile
 - [ ] Add CI/CD
 - [ ] Generate documentation (Sphinx)
