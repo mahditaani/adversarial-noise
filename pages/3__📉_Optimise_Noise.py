@@ -53,7 +53,6 @@ if uploaded_file:
             # Save uploaded file temporarily
             temp_file_path = f"{temp_dir}/temp_image.png"
             # Save uploaded file temporarily
-            temp_file_path = "temp_image.png"
             input_image.save(temp_file_path)
             st.header("Adversarial Image Attack Results")
             st.write(f"Running sweep for epsilon and iterations...")
