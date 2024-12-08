@@ -1,3 +1,5 @@
+# --- title: Home Page
+# --- icon: 🏠
 import streamlit as st
 
 st.set_page_config(page_title="Adversarial Image Attack Tool", layout="wide")

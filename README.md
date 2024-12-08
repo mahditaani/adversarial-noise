@@ -36,7 +36,7 @@ python -m venv .venv
 ## Running the app
 To run the app, execute the following command:
 ```console
-streamlit run main.py
+streamlit run Home.py
 ```
 
 ## Running the tests
