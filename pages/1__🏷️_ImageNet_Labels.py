@@ -10,7 +10,7 @@ with st.spinner("Loading labels..."):
 
 # sidebar option checkbox to show the whole list
 st.sidebar.header("Options")
-show_all = st.sidebar.checkbox("Show all labels", value=False)
+show_all = st.sidebar.checkbox("Show all labels", value=True)
 font_size = st.sidebar.slider("Font Size", 1.0, 2.0, 1.5, step=0.1)
 
 
