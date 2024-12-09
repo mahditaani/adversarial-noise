@@ -7,6 +7,7 @@ This application allows users to test adding adversarial noise to an image. It i
 The app is built using **Streamlit** and allows users to upload an image and select the type of noise to add to the image. The app then displays the original image and the image with the added noise.
 
 For further information, please refer to the following sources
+- [Carlini et al. (2017)](https://arxiv.org/pdf/1608.04644)
 - [Goodfellow et al. (2014)](https://arxiv.org/abs/1412.6572)
 - [interpretable-ml-book](https://christophm.github.io/interpretable-ml-book/adversarial.html).
 - [pytorch example](https://pytorch.org/tutorials/beginner/fgsm_tutorial.html)
